@@ -10,7 +10,7 @@
       "platform": "linux",
       "logo": "https://www.minecraft.net/etc.clientlibs/minecraftnet/clientlibs/clientlib-site/resources/favicon.ico",
       "repository": {
-        "url": "https://github.com/JuanCMerchan/compose_files",
+        "url": "https://github.com/JuanCMerchan/template_files",
         "stackfile": "minecraft-modded-template.yaml"
       },
       "env": [
@@ -175,7 +175,7 @@
       "platform": "linux",
       "logo": "https://www.minecraft.net/etc.clientlibs/minecraftnet/clientlibs/clientlib-site/resources/favicon.ico",
       "repository": {
-        "url": "https://github.com/JuanCMerchan/compose_files",
+        "url": "https://github.com/JuanCMerchan/template_files",
         "stackfile": "minecraft-bedrock-template.yaml"
       },
       "env": [
