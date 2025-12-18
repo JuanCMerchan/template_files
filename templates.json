@@ -95,6 +95,10 @@
               "default": true
             },
             {
+              "text": "Neoforge",
+              "value": "NEOFORGE"
+            },
+            {
               "text": "Fabric",
               "value": "FABRIC"
             }
