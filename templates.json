@@ -101,11 +101,6 @@
           ]
         },
         {
-          "name": "MOD_LOADER_VERSION",
-          "label": "Mod loader version",
-          "description": "Version of modloader (Forge or Fabric) used by the modpack"
-        },
-        {
           "name": "MINECRAFT_VERSION",
           "label": "Minecraft version",
           "description": "Version of minecraft used by the modpack"
