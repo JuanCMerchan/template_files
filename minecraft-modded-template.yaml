@@ -1,0 +1,30 @@
+name: minecraft_modded
+services:
+  mc-server:
+    image: itzg/minecraft-server:java${JAVA_VERSION}
+    tty: true
+    stdin_open: true
+    ports:
+      - "${QUERY_PORT}:25565"
+      - "${VOICE_CHAT_PORT}:24454/udp"
+    environment:
+      UID: "1000"
+      GID: "1000"
+      EULA: "true"
+      TZ: "America/Bogota"
+      USE_AIKAR_FLAGS: "true"
+      MEMORY: "${MEMORY}G"
+      ENABLE_ROLLING_LOGS: "true"
+      TYPE: "${TYPE}"
+      FABRIC_LOADER_VERSION: "${MOD_LOADER_VERSION}"
+      FORGE_VERSION: "${MOD_LOADER_VERSION}"
+      VERSION: "${MINECRAFT_VERSION}"
+      DIFFICULTY: "${DIFFICULTY}"
+      SNOOPER_ENABLED: "false"
+      VIEW_DISTANCE: "16"
+      MODE: "${GAME_MODE}"
+      ALLOW_FLIGHT: "true"
+      GENERIC_PACK: "${MODPACK_URL}"
+      REMOVE_OLD_MODS: "false"
+    volumes:
+      - /home/juancmerchan/Servers/Minecraft/${DIRECTORY_NAME}:/data

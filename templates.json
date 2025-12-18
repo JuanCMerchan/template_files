@@ -1,0 +1,239 @@
+{
+  "version": "3",
+  "templates": [
+    {
+      "id": 1,
+      "type": 3,
+      "title": "Minecraft modded",
+      "description": "Minecraft forge or fabric server pack",
+      "categories": ["Game Server"],
+      "platform": "linux",
+      "logo": "https://www.minecraft.net/etc.clientlibs/minecraftnet/clientlibs/clientlib-site/resources/favicon.ico",
+      "repository": {
+        "url": "https://github.com/JuanCMerchan/compose_files",
+        "stackfile": "minecraft-modded-template.yaml"
+      },
+      "env": [
+        {
+          "name": "JAVA_VERSION",
+          "label": "Java version",
+          "description": "",
+          "select": [
+            {
+              "text": "8",
+              "value": "8"
+            },
+            {
+              "text": "11",
+              "value": "11"
+            },
+            {
+              "text": "17",
+              "value": "17"
+            },
+            {
+              "text": "21",
+              "value": "21",
+              "default": true
+            }
+          ]
+        },
+        {
+          "name": "QUERY_PORT",
+          "label": "Query port",
+          "description": "",
+          "select": [
+            {
+              "text": "25565",
+              "value": "25565",
+              "default": true
+            },
+            {
+              "text": "25566",
+              "value": "25566"
+            },
+            {
+              "text": "25567",
+              "value": "25567"
+            }
+          ]
+        },
+        {
+          "name": "VOICE_CHAT_PORT",
+          "label": "Voice chat port",
+          "description": "",
+          "select": [
+            {
+              "text": "24454",
+              "value": "24454",
+              "default": true
+            },
+            {
+              "text": "24455",
+              "value": "24455"
+            },
+            {
+              "text": "24456",
+              "value": "24456"
+            }
+          ]
+        },
+        {
+          "name": "MEMORY",
+          "label": "Memory",
+          "description": "Memory amount in gigabytes",
+          "default": "10"
+        },
+        {
+          "name": "TYPE",
+          "label": "Mod loader",
+          "description": "",
+          "select": [
+            {
+              "text": "Forge",
+              "value": "FORGE",
+              "default": true
+            },
+            {
+              "text": "Fabric",
+              "value": "FABRIC"
+            }
+          ]
+        },
+        {
+          "name": "MOD_LOADER_VERSION",
+          "label": "Mod loader version",
+          "description": "Version of modloader (Forge or Fabric) used by the modpack"
+        },
+        {
+          "name": "MINECRAFT_VERSION",
+          "label": "Minecraft version",
+          "description": "Version of minecraft used by the modpack"
+        },
+        {
+          "name": "DIFFICULTY",
+          "label": "Difficulty",
+          "description": "",
+          "select": [
+            {
+              "text": "Peaceful",
+              "value": "peaceful"
+            },
+            {
+              "text": "Easy",
+              "value": "easy"
+            },
+            {
+              "text": "Normal",
+              "value": "normal",
+              "default": true
+            },
+            {
+              "text": "Hard",
+              "value": "hard"
+            }
+          ]
+        },
+        {
+          "name": "GAME_MODE",
+          "label": "Game mode",
+          "description": "",
+          "select": [
+            {
+              "text": "Creative",
+              "value": "creative"
+            },
+            {
+              "text": "Survival",
+              "value": "survival",
+              "default": true
+            },
+            {
+              "text": "Adventure",
+              "value": "adventure"
+            }
+          ]
+        },
+        {
+          "name": "MODPACK_URL",
+          "label": "Server pack URL",
+          "description": "Server pack .zip download URL" 
+        },
+        {
+          "name": "DIRECTORY_NAME",
+          "label": "Directory name",
+          "description": "Name of the directory where the game files will be stored"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "type": 3,
+      "title": "Minecraft Bedrock",
+      "description": "Minecraft Bedrock server",
+      "categories": ["Game Server"],
+      "platform": "linux",
+      "logo": "https://www.minecraft.net/etc.clientlibs/minecraftnet/clientlibs/clientlib-site/resources/favicon.ico",
+      "repository": {
+        "url": "https://github.com/JuanCMerchan/compose_files",
+        "stackfile": "minecraft-bedrock-template.yaml"
+      },
+      "env": [
+        {
+          "name": "DIFFICULTY",
+          "label": "Difficulty",
+          "description": "",
+          "select": [
+            {
+              "text": "Peaceful",
+              "value": "peaceful"
+            },
+            {
+              "text": "Easy",
+              "value": "easy"
+            },
+            {
+              "text": "Normal",
+              "value": "normal",
+              "default": true
+            },
+            {
+              "text": "Hard",
+              "value": "hard"
+            }
+          ]
+        },
+        {
+          "name": "GAME_MODE",
+          "label": "Game mode",
+          "description": "",
+          "select": [
+            {
+              "text": "Creative",
+              "value": "creative"
+            },
+            {
+              "text": "Survival",
+              "value": "survival",
+              "default": true
+            },
+            {
+              "text": "Adventure",
+              "value": "adventure"
+            }
+          ]
+        },
+        {
+          "name": "VERSION",
+          "label": "Minecraft version",
+          "default": "LATEST"
+        },
+        {
+          "name": "LEVEL_NAME",
+          "label": "Level name",
+          "description": "The world name used for the save"
+        }
+      ]
+    }
+  ]
+}
