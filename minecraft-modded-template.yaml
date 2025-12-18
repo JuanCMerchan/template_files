@@ -1,9 +1,10 @@
 name: minecraft_modded
 services:
-  mc-server:
+  minecraft-server:
     image: itzg/minecraft-server:java${JAVA_VERSION}
     tty: true
     stdin_open: true
+    restart: unless-stopped
     ports:
       - "${QUERY_PORT}:25565"
       - "${VOICE_CHAT_PORT}:24454/udp"
