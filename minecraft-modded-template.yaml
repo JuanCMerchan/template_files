@@ -1,4 +1,4 @@
-name: minecraft_modded
+name: minecraft-modded
 services:
   minecraft-server:
     image: itzg/minecraft-server:java${JAVA_VERSION}
