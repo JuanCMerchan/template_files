@@ -26,4 +26,8 @@ services:
       GENERIC_PACK: "${MODPACK_URL}"
       REMOVE_OLD_MODS: "false"
     volumes:
-      - /home/juancmerchan/Servers/Minecraft/${DIRECTORY_NAME}:/data
+      - data:/data
+
+volumes:
+  data:
+    name: ${VOLUME_NAME}

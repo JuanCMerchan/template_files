@@ -16,6 +16,9 @@ services:
       GAMEMODE: "${GAME_MODE}"
       VIEW_DISTANCE: "16"
       VERSION: "${VERSION}"
-      LEVEL_NAME: "${LEVEL_NAME}"
     volumes:
-      - /home/juancmerchan/Servers/Minecraft/bedrock:/data
+      - data:/data
+
+volumes:
+  data:
+    name: ${VOLUME_NAME}
