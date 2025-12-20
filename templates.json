@@ -241,7 +241,7 @@
       "description": "Zomboid server",
       "categories": ["Game Server"],
       "platform": "linux",
-      "logo": "https://projectzomboid.com/favicon.ico",
+      "logo": "https://projectzomboid.com/blog/content/themes/rw-project-zomboid/assets/images/logo.png",
       "repository": {
         "url": "https://github.com/JuanCMerchan/template_files",
         "stackfile": "zomboid-template.yaml"

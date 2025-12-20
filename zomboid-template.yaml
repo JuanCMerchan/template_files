@@ -19,7 +19,7 @@ services:
       GAME_VERSION: "${GAME_VERSION}"
       GC_CONFIG: "ZGC"
       MAP_NAMES: "Muldraugh, KY"
-      MAX_PLAYERS: "{MAX_PLAYERS}"
+      MAX_PLAYERS: "${MAX_PLAYERS}"
       MAX_RAM: "8192m"
       MOD_NAMES: "${MOD_NAMES}"
       MOD_WORKSHOP_IDS: "${MOD_WORKSHOP_IDS}"
