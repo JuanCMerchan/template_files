@@ -9,8 +9,6 @@ services:
       - "${QUERY_PORT}:25565"
       - "${VOICE_CHAT_PORT}:24454/udp"
     environment:
-      UID: "1000"
-      GID: "1000"
       EULA: "true"
       TZ: "America/Bogota"
       USE_AIKAR_FLAGS: "true"

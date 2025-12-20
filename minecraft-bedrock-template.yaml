@@ -8,8 +8,6 @@ services:
     ports:
       - 19132:19132/udp
     environment:
-      UID: "1000"
-      GID: "1000"
       EULA: "true"
       TZ: "America/Bogota"
       DIFFICULTY: "${DIFFICULTY}"
