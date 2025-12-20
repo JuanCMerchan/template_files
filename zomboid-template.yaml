@@ -11,7 +11,7 @@ services:
       - 16261:16261/udp
       - 16262:16262/udp
     environment:
-      ADMIN_PASSWORD: "${ADMIN_PASSWORD:}"
+      ADMIN_PASSWORD: "${ADMIN_PASSWORD}"
       ADMIN_USERNAME: "${ADMIN_USERNAME}"
       AUTOSAVE_INTERVAL: "15"
       BIND_IP: "0.0.0.0"
