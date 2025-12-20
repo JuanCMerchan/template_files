@@ -233,6 +233,70 @@
           "description": "Name of the docker volume where data is going to be stored"
         }
       ]
+    },
+    {
+      "id": 3,
+      "type": 3,
+      "title": "Zomboid server",
+      "description": "Zomboid server",
+      "categories": ["Game Server"],
+      "platform": "linux",
+      "logo": "https://projectzomboid.com/favicon.ico",
+      "repository": {
+        "url": "https://github.com/JuanCMerchan/template_files",
+        "stackfile": "zomboid-template.yaml"
+      },
+      "env": [
+        {
+          "name": "ADMIN_USERNAME",
+          "label": "Admin username",
+          "description": "",
+          "default": "superuser"
+        },
+        {
+          "name": "ADMIN_PASSWORD",
+          "label": "Admin password",
+          "description": "",
+          "default": "superuser"
+        },
+        {
+          "name": "SERVER_NAME",
+          "label": "Server name",
+          "description": ""
+        },
+        {
+          "name": "SERVER_PASSWORD",
+          "label": "Server password",
+          "description": ""
+        },
+        {
+          "name": "MAX_PLAYERS",
+          "label": "Max players",
+          "description": "",
+          "default": "16"
+        },
+        {
+          "name": "GAME_VERSION",
+          "label": "Game version",
+          "description": "Game branch to use",
+          "default": "public"
+        },
+        {
+          "name": "MOD_NAMES",
+          "label": "Mod names",
+          "description": "List of semicolon separated mod names"
+        },
+        {
+          "name": "MOD_WORKSHOP_IDS",
+          "label": "Mod workshop IDs",
+          "description": "List of semicolon separated mod workshop IDs"
+        },
+        {
+          "name": "VOLUME_NAME",
+          "label": "Volume name",
+          "description": "Name of the docker volume where data is going to be stored"
+        }
+      ]
     }
   ]
 }

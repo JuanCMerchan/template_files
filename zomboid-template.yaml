@@ -1,0 +1,42 @@
+name: zomboid-server
+services:
+  zomboid-server:
+    image: docker.io/renegademaster/zomboid-dedicated-server:latest
+    container_name: zomboid-server
+    tty: true
+    stdin_open: true
+    restart: unless-stopped
+
+    ports:
+      - 16261:16261/udp
+      - 16262:16262/udp
+    environment:
+      ADMIN_PASSWORD: "${ADMIN_PASSWORD:}"
+      ADMIN_USERNAME: "${ADMIN_USERNAME}"
+      AUTOSAVE_INTERVAL: "15"
+      BIND_IP: "0.0.0.0"
+      DEFAULT_PORT: "16261"
+      GAME_VERSION: "${GAME_VERSION}"
+      GC_CONFIG: "ZGC"
+      MAP_NAMES: "Muldraugh, KY"
+      MAX_PLAYERS: "{MAX_PLAYERS}"
+      MAX_RAM: "8192m"
+      MOD_NAMES: "${MOD_NAMES}"
+      MOD_WORKSHOP_IDS: "${MOD_WORKSHOP_IDS}"
+      PAUSE_ON_EMPTY: "true"
+      PUBLIC_SERVER: "true"
+      SERVER_NAME: "${SERVER_NAME}"
+      SERVER_PASSWORD: "${SERVER_PASSWORD}"
+      STEAM_VAC: "false"
+      UDP_PORT: "16262"
+      USE_STEAM: "true"
+      TZ: "EST"
+    volumes:
+      - zomboid-config:/home/steam/Zomboid
+      - zomboid-server-files:/home/steam/ZomboidDedicatedServer
+
+volumes:
+  zomboid-server-files:
+    name: "${VOLUME_NAME}-server-files"
+  zomboid-config:
+    name: "${VOLUME_NAME}-config"  
