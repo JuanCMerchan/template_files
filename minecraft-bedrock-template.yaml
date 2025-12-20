@@ -16,10 +16,7 @@ services:
       VERSION: "${VERSION}"
     volumes:
       - data:/data
-      - save:/data/worlds
 
 volumes:
   data:
     name: "${VOLUME_NAME}"
-  save:
-    name: "${VOLUME_NAME}-save"

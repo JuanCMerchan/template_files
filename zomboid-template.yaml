@@ -34,12 +34,9 @@ services:
     volumes:
       - zomboid-config:/home/steam/Zomboid
       - zomboid-server-files:/home/steam/ZomboidDedicatedServer
-      - zomboid-save:/home/steam/Zomboid/Saves
 
 volumes:
   zomboid-server-files:
     name: "${VOLUME_NAME}-server-files"
   zomboid-config:
-    name: "${VOLUME_NAME}-config"
-  zomboid-save:
-    name: "${VOLUME_NAME}-save"
+    name: "${VOLUME_NAME}-config"  

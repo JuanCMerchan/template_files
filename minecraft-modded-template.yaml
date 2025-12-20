@@ -25,10 +25,7 @@ services:
       REMOVE_OLD_MODS: "false"
     volumes:
       - data:/data
-      - save:/data/world
 
 volumes:
   data:
     name: "${VOLUME_NAME}"
-  save:
-    name: "${VOLUME_NAME}-save"
