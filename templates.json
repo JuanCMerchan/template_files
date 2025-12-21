@@ -179,6 +179,25 @@
       },
       "env": [
         {
+          "name": "PORT",
+          "label": "Port",
+          "description": "",
+          "select": [
+            {
+              "text": "19132",
+              "value": "19132"
+            },
+            {
+              "text": "19133",
+              "value": "19133"
+            },
+            {
+              "text": "19134",
+              "value": "19134"
+            }
+          ]
+        },
+        {
           "name": "DIFFICULTY",
           "label": "Difficulty",
           "description": "",
