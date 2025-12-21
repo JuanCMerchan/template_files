@@ -6,14 +6,14 @@ services:
     stdin_open: true
     restart: unless-stopped
     ports:
-      - "${PORT_1}:16261/udp"
-      - "${PORT_2}:16262/udp"
+      - "${PORT_1}:${PORT_1}/udp"
+      - "${PORT_2}:${PORT_2}/udp"
     environment:
       ADMIN_PASSWORD: "${ADMIN_PASSWORD}"
       ADMIN_USERNAME: "${ADMIN_USERNAME}"
       AUTOSAVE_INTERVAL: "15"
       BIND_IP: "0.0.0.0"
-      DEFAULT_PORT: "16261"
+      DEFAULT_PORT: "${PORT_1}"
       GAME_VERSION: "${GAME_VERSION}"
       GC_CONFIG: "ZGC"
       MAP_NAMES: "Muldraugh, KY"
@@ -26,7 +26,7 @@ services:
       SERVER_NAME: "${SERVER_NAME}"
       SERVER_PASSWORD: "${SERVER_PASSWORD}"
       STEAM_VAC: "false"
-      UDP_PORT: "16262"
+      UDP_PORT: "${PORT_2}"
       USE_STEAM: "true"
       TZ: "EST"
     volumes:
