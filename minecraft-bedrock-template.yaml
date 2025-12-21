@@ -6,7 +6,7 @@ services:
     stdin_open: true
     restart: unless-stopped
     ports:
-      - "${PORT}:19132/udp"
+      - "${QUERY_PORT}:19132/udp"
     environment:
       EULA: "true"
       TZ: "America/Bogota"

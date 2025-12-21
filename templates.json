@@ -179,8 +179,8 @@
       },
       "env": [
         {
-          "name": "PORT",
-          "label": "Port",
+          "name": "QUERY_PORT",
+          "label": "Query port",
           "description": "",
           "select": [
             {
@@ -267,8 +267,8 @@
       },
       "env": [
         {
-          "name": "PORT_1",
-          "label": "Port 1",
+          "name": "QUERY_PORT_1",
+          "label": "Query port 1",
           "description": "",
           "select": [
             {
@@ -286,8 +286,8 @@
           ]
         },
         {
-          "name": "PORT_2",
-          "label": "Port 2",
+          "name": "QUERY_PORT_2",
+          "label": "Query port 2",
           "description": "",
           "select": [
             {
