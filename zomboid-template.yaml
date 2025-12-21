@@ -2,11 +2,9 @@ name: zomboid-server
 services:
   zomboid-server:
     image: docker.io/renegademaster/zomboid-dedicated-server:latest
-    container_name: zomboid-server
     tty: true
     stdin_open: true
     restart: unless-stopped
-
     ports:
       - "${PORT_1}:16261/udp"
       - "${PORT_2}:16262/udp"
