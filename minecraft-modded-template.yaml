@@ -32,8 +32,6 @@ services:
       - type: volume
         source: save
         target: /data/world
-        volume:
-          nocopy: true
 
 volumes:
   data:
