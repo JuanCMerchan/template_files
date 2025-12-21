@@ -8,8 +8,8 @@ services:
     restart: unless-stopped
 
     ports:
-      - 16261:16261/udp
-      - 16262:16262/udp
+      - "${PORT_1}:16261/udp"
+      - "${PORT_2}:16262/udp"
     environment:
       ADMIN_PASSWORD: "${ADMIN_PASSWORD}"
       ADMIN_USERNAME: "${ADMIN_USERNAME}"

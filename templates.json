@@ -248,6 +248,44 @@
       },
       "env": [
         {
+          "name": "PORT_1",
+          "label": "Port 1",
+          "description": "",
+          "select": [
+            {
+              "text": "16261",
+              "value": "16261"
+            },
+            {
+              "text": "16263",
+              "value": "16263"
+            },
+            {
+              "text": "16265",
+              "value": "16265"
+            }
+          ]
+        },
+        {
+          "name": "PORT_2",
+          "label": "Port 2",
+          "description": "",
+          "select": [
+            {
+              "text": "16262",
+              "value": "16262"
+            },
+            {
+              "text": "16264",
+              "value": "16264"
+            },
+            {
+              "text": "16266",
+              "value": "16266"
+            }
+          ]
+        },
+        {
           "name": "ADMIN_USERNAME",
           "label": "Admin username",
           "description": "",
