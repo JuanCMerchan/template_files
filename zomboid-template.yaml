@@ -37,4 +37,4 @@ volumes:
   zomboid-server-files:
     name: "${VOLUME_NAME}-server-files"
   zomboid-config:
-    name: "${VOLUME_NAME}-config"  
+    name: "${VOLUME_NAME}-config"
