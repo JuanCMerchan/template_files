@@ -30,8 +30,12 @@ services:
       USE_STEAM: "true"
       TZ: "EST"
     volumes:
-      - zomboid-config:/home/steam/Zomboid
-      - zomboid-server-files:/home/steam/ZomboidDedicatedServer
+      - type: volume
+        source: zomboid-server-files
+        target: /home/steam/ZomboidDedicatedServer
+      - type: volume
+        source: zomboid-config
+        target: /home/steam/Zomboid
 
 volumes:
   zomboid-server-files:
