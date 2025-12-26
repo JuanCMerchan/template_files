@@ -22,6 +22,7 @@ services:
       MODE: "${GAME_MODE}"
       ALLOW_FLIGHT: "true"
       GENERIC_PACK: "${MODPACK_URL}"
+      MODS: "${MODS}"
       REMOVE_OLD_MODS: "false"
     volumes:
       - type: volume

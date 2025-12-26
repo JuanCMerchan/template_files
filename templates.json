@@ -159,6 +159,11 @@
           "description": "Server pack .zip download URL" 
         },
         {
+          "name": "MODS",
+          "label": "Extra mods",
+          "description": ""
+        },
+        {
           "name": "VOLUME_NAME",
           "label": "Volume name",
           "description": "Name of the docker volume where data is going to be stored"
