@@ -330,11 +330,6 @@
           "description": ""
         },
         {
-          "name": "SERVER_PASSWORD",
-          "label": "Server password",
-          "description": ""
-        },
-        {
           "name": "MAX_PLAYERS",
           "label": "Max players",
           "description": "",
@@ -345,22 +340,6 @@
           "label": "Game version",
           "description": "Game branch to use",
           "default": "public"
-        },
-        {
-          "name": "MAP_NAMES",
-          "label": "Map names",
-          "description": "Maps to load",
-          "default": "Muldraugh, KY"
-        },
-        {
-          "name": "MOD_NAMES",
-          "label": "Mod names",
-          "description": "List of semicolon separated mod names"
-        },
-        {
-          "name": "MOD_WORKSHOP_IDS",
-          "label": "Mod workshop IDs",
-          "description": "List of semicolon separated mod workshop IDs"
         },
         {
           "name": "VOLUME_NAME",

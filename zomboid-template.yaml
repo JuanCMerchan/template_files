@@ -1,7 +1,7 @@
 name: zomboid-server
 services:
   zomboid-server:
-    image: docker.io/renegademaster/zomboid-dedicated-server:latest
+    image: indifferentbroccoli/projectzomboid-server-docker:latest
     tty: true
     stdin_open: true
     restart: unless-stopped
@@ -9,33 +9,26 @@ services:
       - "${QUERY_PORT_1}:${QUERY_PORT_1}/udp"
       - "${QUERY_PORT_2}:${QUERY_PORT_2}/udp"
     environment:
-      ADMIN_PASSWORD: "${ADMIN_PASSWORD}"
+      PUID: 1000
+      PGID: 1000
       ADMIN_USERNAME: "${ADMIN_USERNAME}"
-      AUTOSAVE_INTERVAL: "15"
-      BIND_IP: "0.0.0.0"
-      DEFAULT_PORT: "${QUERY_PORT_1}"
-      GAME_VERSION: "${GAME_VERSION}"
-      GC_CONFIG: "ZGC"
-      MAP_NAMES: "${MAP_NAMES}"
-      MAX_PLAYERS: "${MAX_PLAYERS}"
-      MAX_RAM: "8192m"
-      MOD_NAMES: "${MOD_NAMES}"
-      MOD_WORKSHOP_IDS: "${MOD_WORKSHOP_IDS}"
-      PAUSE_ON_EMPTY: "true"
-      PUBLIC_SERVER: "true"
+      ADMIN_PASSWORD: "${ADMIN_PASSWORD}"
       SERVER_NAME: "${SERVER_NAME}"
-      SERVER_PASSWORD: "${SERVER_PASSWORD}"
-      STEAM_VAC: "false"
+      DEFAULT_PORT: "${QUERY_PORT_1}"
       UDP_PORT: "${QUERY_PORT_2}"
+      MAX_PLAYERS: "${MAX_PLAYERS}"
+      MEMORY_XMX_GB: "8"
+      UPDATE_ON_START: "true"
+      SERVER_BRANCH: "${GAME_VERSION}"
+      STEAM_VAC: "false"
       USE_STEAM: "true"
-      TZ: "EST"
     volumes:
       - type: volume
         source: zomboid-server-files
-        target: /home/steam/ZomboidDedicatedServer
+        target: /project-zomboid
       - type: volume
         source: zomboid-config
-        target: /home/steam/Zomboid
+        target: /project-zomboid-config
 
 volumes:
   zomboid-server-files:
