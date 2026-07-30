@@ -333,13 +333,12 @@
           "name": "MAX_PLAYERS",
           "label": "Max players",
           "description": "",
-          "default": "16"
+          "default": "32"
         },
         {
-          "name": "GAME_VERSION",
-          "label": "Game version",
-          "description": "Game branch to use",
-          "default": "public"
+          "name": "SERVER_BRANCH",
+          "label": "Server branch",
+          "description": "Server branch to use"
         },
         {
           "name": "VOLUME_NAME",

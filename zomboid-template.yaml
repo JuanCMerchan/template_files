@@ -19,7 +19,7 @@ services:
       MAX_PLAYERS: "${MAX_PLAYERS}"
       MEMORY_XMX_GB: "8"
       UPDATE_ON_START: "true"
-      SERVER_BRANCH: "${GAME_VERSION}"
+      SERVER_BRANCH: "${SERVER_BRANCH}"
       STEAM_VAC: "false"
       USE_STEAM: "true"
     volumes:
