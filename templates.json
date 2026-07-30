@@ -347,6 +347,12 @@
           "default": "public"
         },
         {
+          "name": "MAP_NAMES",
+          "label": "Map names",
+          "description": "Maps to load",
+          "default": "Muldraugh, KY"
+        },
+        {
           "name": "MOD_NAMES",
           "label": "Mod names",
           "description": "List of semicolon separated mod names"

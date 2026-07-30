@@ -16,7 +16,7 @@ services:
       DEFAULT_PORT: "${QUERY_PORT_1}"
       GAME_VERSION: "${GAME_VERSION}"
       GC_CONFIG: "ZGC"
-      MAP_NAMES: "Muldraugh, KY"
+      MAP_NAMES: "${MAP_NAMES}"
       MAX_PLAYERS: "${MAX_PLAYERS}"
       MAX_RAM: "8192m"
       MOD_NAMES: "${MOD_NAMES}"
