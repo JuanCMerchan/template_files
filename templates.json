@@ -325,6 +325,12 @@
           "default": "superuser"
         },
         {
+          "name": "RCON_PASSWORD",
+          "label": "Rcon password",
+          "description": "",
+          "default": "superuser"
+        },
+        {
           "name": "SERVER_NAME",
           "label": "Server name",
           "description": ""
@@ -334,6 +340,12 @@
           "label": "Max players",
           "description": "",
           "default": "32"
+        },
+        {
+          "name": "MAX_MEMORY",
+          "label": "Max memory in GB",
+          "description": "",
+          "default": "8"
         },
         {
           "name": "SERVER_BRANCH",
