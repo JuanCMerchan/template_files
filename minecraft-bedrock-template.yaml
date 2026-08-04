@@ -1,4 +1,3 @@
-name: minecraft-bedrock
 services:
   bedrock-server:
     image: itzg/minecraft-bedrock-server:latest

@@ -1,4 +1,3 @@
-name: zomboid-server
 services:
   zomboid-server:
     image: indifferentbroccoli/projectzomboid-server-docker:latest
